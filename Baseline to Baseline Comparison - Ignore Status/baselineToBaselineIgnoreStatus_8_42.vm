@@ -948,7 +948,7 @@
                         #if($dl.get(0) == $baseDoc.documentType.id)
                         ################### once you have the item type, loop through its fields #################
                             #foreach($b in $dl)
-                                #if($spot != 0 && $b != "status")
+                                #if($spot != 0 && $b != "workflow_status")
                                 ################### check to see if the field for the b1 is different than same field in b2 #################
                                     #if($velocityReportUtil.getValueForField($baseDoc, $b, $dateFormat) != $velocityReportUtil.getValueForField($compareDoc, $b, $dateFormat))
                                         #set($foundChg = 1)
